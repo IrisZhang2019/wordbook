@@ -1,2 +1,2 @@
 # wordbook
-flask practic + AP learning
+flask practice + AP learning
