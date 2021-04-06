@@ -1,3 +1,4 @@
+<!--
 <html>
    <head>
       <script type = "text/javascript" 
@@ -5,6 +6,33 @@
    </head>
    
    <body>
-      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+      <input type = "button" onclick = "sayHello()" value = "Next Word" />
    </body>
 </html>
+-->
+
+<!--
+<script type=text/javascript>
+  $(function() {
+    $('a#calculate').bind('click', function() {
+      $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+        a: $('input[name="a"]').val(),
+        b: $('input[name="b"]').val()
+      }, function(data) {
+        $("#result").text(data.result);
+      });
+      return false;
+    });
+  });
+</script>
+<h1>jQuery Example</h1>
+<p><input type=text size=5 name=a> +
+   <input type=text size=5 name=b> =
+   <span id=result>?</span>
+<p><a href=# id=calculate>calculate server side</a>
+-->
+
+<body>
+    <p> {{ word }} </p>
+    <input type="reset" value="REFRESH">
+</body>
